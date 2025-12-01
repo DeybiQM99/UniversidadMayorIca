@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universidad Mayor de Ica</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="stylesheet" href="ICON/style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css">
+  <!-- Material Icons (opcional si también las usarás) -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Material para ir hacia arriba -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+  <link rel="stylesheet" href="ICON/style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css">
+  <!-- Material Icons (opcional si también las usarás) -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Material para ir hacia arriba -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+</head>
+
+<body>
+  <!-- Header  -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="img/logohorizontal.png" alt="Logo Universidad Mayor de Ica" class="logo-img">
+      </a>
+
+      <!-- NAV + ACCIONES DE USUARIO -->
+      <div class="header-right">
+
+        <!-- Botón hamburguesa (solo móvil) -->
+        <button id="btnMenu" class="menu-toggle" aria-label="Abrir menú">
+          <i id="iconMenu" class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Menú normal + menú móvil acordeón -->
+        <nav id="mainMenu" class="site-nav">
+          <a href="index.html"class="active">Inicio</a>
+          <a href="carreras.html" >Carreras</a>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <!-- Acciones de usuario -->
+        <div class="user-actions">
+          <button id="btnLogout" class="btn btn-logout" type="button">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Cerrar sesión
+          </button>
+
+          <span class="user-badge">
+            <i class="fa-solid fa-circle-user"></i>
+          </span>
+          <!-- Botón Dark Mode -->
+          <button id="btnDarkMode" class="dark-toggle" aria-label="Cambiar tema">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section id="inicio" class="banner">
+    <img src="img/banner.png" alt="Universidad Mayor de Ica" class="banner-img">
+  </section>
+
+  <!-- Carreras -->
+  <section id="carreras" class="section container">
+    <h2 class="section-title">Carreras</h2>
+    <div class="grid-3">
+      <article class="card">
+        <div class="media" aria-label="Imagen carrera 1">
+          <img class="imgcarrera" src="img/ing.png" alt="">
+        </div>
+        <h3>Ingeniería</h3>
+        <p>Innovación y tecnología al servicio del país.</p>
+        <a class="btn btn-solid" href="carreras.html">Ver detalles </a>
+      </article>
+      <article class="card">
+        <div class="media" aria-label="Imagen carrera 2">
+          <img class="imgcarrera" src="img/sal.jpg" alt="">
+        </div>
+        <h3>Salud</h3>
+        <p>Formación humana y científica de alto nivel.</p>
+        <a class="btn btn-solid" href="carreras.html">Ver detalles </a>
+      </article>
+      <article class="card">
+        <div class="media" aria-label="Imagen carrera 3">
+          <img class="imgcarrera" src="img/abo.jpg" alt="">
+        </div>
+        <h3>Derecho</h3>
+        <p>Ética, justicia y liderazgo para transformar.</p>
+        <a class="btn btn-solid" href="carreras.html">Ver detalles </a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Video -->
+  <section id="video" class="video-band">
+    <div class="container">
+      <h2 class="section-title center">Video</h2>
+      <div class="video-frame">
+        <div class="video-poster" aria-label="Marco para video">
+          <iframe class="videito" width="560" height="315"
+            src="https://www.youtube.com/embed/ooypKDXfEuA?si=yRTwFPEN-SSNxnAK&amp;start=1" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Noticias -->
+  <section id="noticias" class="section container two-col">
+    <div class="media tall" aria-label="Imagen noticia 1">
+      <img class="imgcarrera" src="img/notifcias.jpg" alt="">
+    </div>
+    <div>
+      <h2 class="section-title">Nuevas Noticias</h2>
+      <p>Logros recientes, eventos académicos y avances de investigación de nuestra comunidad universitaria.</p>
+      <a class="btn btn-solid" href="#">Leer más</a>
+    </div>
+  </section>
+
+  <!-- Sueños hechos realidad -->
+  <section class="section container two-col reverse">
+    <div>
+      <h2 class="section-title">Sueños hechos realidad</h2>
+      <p>Historias de egresados que hoy lideran proyectos, empresas y organizaciones en el Perú y el mundo.</p>
+      <a class="btn btn-solid " href="#">Conoce las historias</a>
+    </div>
+    <div class="media tall" aria-label="Imagen casos de éxito">
+      <img class="imgcarrera" src="img/exito.jpg" alt="">
+    </div>
+  </section>
+
+  <!-- Comentarios -->
+  <section id="comentarios" class="section container">
+    <h2 class="section-title">Comentarios</h2>
+    <div class="grid-3 testimonials">
+
+      <div class="testimonial card">
+        <p>“Docentes de calidad y un entorno que impulsa a superarte.”</p>
+        <div class="stars" aria-label="5 de 5">★★★★★</div>
+        <p><strong>María R.</strong></p>
+      </div>
+
+      <div class="testimonial card">
+        <p>“Infraestructura moderna y programas actualizados.”</p>
+        <div class="stars" aria-label="5 de 5">★★★★★</div>
+        <p><strong>Carlos V.</strong></p>
+      </div>
+
+      <div class="testimonial card">
+        <p>“La mejor decisión para mi futuro profesional.”</p>
+        <div class="stars" aria-label="5 de 5">★★★★★</div>
+        <p><strong>Ana Q.</strong></p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Experiencias -->
+  <section id="experiencias" class="section container">
+    <h2 class="section-title">Experiencias</h2>
+    <div class="grid-2">
+      <div class="media wide" aria-label="Foto experiencia 1">
+        <img class="imgcarrera" src="img/exp1.webp" alt="">
+      </div>
+      <div class="media wide" aria-label="Foto experiencia 2">
+        <img class="imgcarrera" src="img/exp2.avif" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- Botón para volver arriba -->
+  <button id="btn-ir-arriba" aria-label="Volver al inicio">
+    <span class="material-symbols-rounded">arrow_upward</span>
+  </button>
+  <!-- Fin del Botón para volver arriba -->
+
+  <!-- Footer -->
+  <footer id="contacto" class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo mono" aria-hidden="true">
+          <img class="logo-img" src="img/logohorizontal.png" alt="">
+        </div>
+      </div>
+
+      <nav aria-label="Enlaces legales">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Política de Privacidad</a></li>
+          <li><a href="#">Términos y Condiciones</a></li>
+          <li><a href="#">Libro de Reclamaciones</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Contacto">
+        <h3>Contáctanos</h3>
+        <ul>
+          <li><a href="mailto:admisiones@umi.edu.pe">admisiones@umi.edu.pe</a></li>
+          <li><a href="tel:+5100000000">+51 000 000 000</a></li>
+          <li><a href="#">Av. Principal 123, Ica</a></li>
+        </ul>
+      </nav>
+
+      <div class="social">
+        <h3>Síguenos</h3>
+        <div class="icons">
+          <a target="_blank" href="https://www.facebook.com/" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a target="_blank" href="https://www.instagram.com/" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=pQt1199dwqU" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <p class="copy">© 2025 Universidad Mayor de Ica. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Modal de confirmación de logout -->
+  <div id="overlayLogout" class="overlay" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="logoutTitle">
+      <h3 id="logoutTitle">¿Cerrar sesión?</h3>
+      <p>Se cerrará tu sesión actual.</p>
+      <div class="modal-actions">
+        <button id="confirmLogout" class="btn btn-solid danger">Sí, cerrar</button>
+        <button id="cancelLogout" class="btn btn-outline">Cancelar</button>
+      </div>
+    </div>
+  </div>
+  <!-- Fin modal -->
+
+  <script src="JS/BotonArriba.js"></script>
+  <script src="JS/logoutModal.js"></script>
+  <script src="JS/dark.js"></script>
+  <script src="JS/menu.js"></script>
+
+
+</body>
+
+</html>

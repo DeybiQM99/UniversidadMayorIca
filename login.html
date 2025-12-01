@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>UMI - Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  <!-- Estilos específicos del login -->
+  <link rel="stylesheet" href="css/estilosLogin.css">
+</head>
+
+<body>
+
+  <main class="login-card">
+    <div class="login-logo">
+      <!-- Aquí podrías poner tu logo real (img) si quieres -->
+      <span>UMI</span>
+    </div>
+
+    <h1>Bienvenido</h1>
+    <p class="subtitle">Ingresa con tu usuario institucional</p>
+
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" name="usuario" autocomplete="username" required>
+      </div>
+
+      <div class="form-group">
+        <label for="clave">Contraseña</label>
+        <input type="password" id="clave" name="clave" autocomplete="current-password" required>
+      </div>
+
+      <button type="submit" class="btn-login">Ingresar</button>
+    </form>
+
+    <div id="mensaje" class="msg"></div>
+  </main>
+
+  <!-- Lógica del login -->
+  <script src="JS/login.js"></script>
+
+
+</body>
+
+</html>
