@@ -1,0 +1,47 @@
+/* ====== Carreras (página) ====== */
+.career-hero {
+    padding-top: 28px;
+    padding-bottom: 0;
+}
+
+.career-sub {
+    margin: 6px 0 0;
+    opacity: .9;
+}
+
+/* Tarjetas de carreras */
+.career-grid {
+    align-items: start;
+}
+
+.career-card h3 {
+    margin: 6px 0 10px;
+}
+
+.bullets {
+    margin: 0 0 12px 0;
+    padding-left: 18px;
+}
+
+.bullets li {
+    margin: 4px 0;
+}
+
+
+/* ====== Carreras  ====== */
+/* Hereda 3 columnas desde .grid-3 */
+/* Aquí solo ajustamos los breakpoints para carreras */
+
+/* 2 columnas en tablet */
+@media (max-width: 992px) {
+  .career-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 1 columna en móvil */
+@media (max-width: 600px) {
+  .career-grid {
+    grid-template-columns: 1fr;
+  }
+}

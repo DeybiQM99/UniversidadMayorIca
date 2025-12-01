@@ -1,0 +1,125 @@
+/* ========= Contenedor de Contacto ========= */
+.two-col {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+/* Formulario */
+.contact-form {
+  display: grid;
+  gap: 14px;
+}
+
+.field label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #e1dbd2;
+  background: #fff;
+  color: var(--azul);
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: 2px solid var(--dorado);
+  border-color: var(--dorado);
+}
+
+.imgcarrera {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Placeholder de imagen lateral */
+.media.tall {
+  background: #f4f1ec;
+  border: 3px solid var(--dorado);
+  border-radius: 12px;
+  height: 360px;
+}
+
+/* ========= Sedes ========= */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.location {
+  background: #fff;
+  border: 1px solid #e1dbd2;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+}
+
+/* ========= Mapa ========= */
+.media.wide {
+  background: #f4f1ec;
+  border: 3px solid var(--dorado);
+  border-radius: 12px;
+  height: 320px;
+}
+
+.mapita {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border: none;
+}
+
+/* ================== CONTACTO: Responsive ================== */
+
+/* Tablet (≤992px) */
+@media (max-width: 992px) {
+  /* Apilar formulario + imagen */
+  .two-col { 
+    grid-template-columns: 1fr; 
+    gap: 18px; 
+    align-items: stretch;
+  }
+  /* Form arriba, imagen abajo */
+  .two-col .contact-form { order: 1; }
+  .two-col .media { order: 2; }
+
+  /* Alturas más compactas */
+  .media.tall { height: 300px; }
+  .media.wide { height: 280px; }
+
+  /* Sedes: 3 → 2 columnas */
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Móvil (≤600px) */
+@media (max-width: 600px) {
+  /* Suficiente respiro entre campos */
+  .contact-form { gap: 12px; }
+
+  /* Inputs cómodos para dedo */
+  .field input,
+  .field textarea {
+    padding: 12px 14px;
+    font-size: 1rem;
+  }
+
+  /* Botón a todo el ancho */
+  .contact-form .btn { width: 100%; }
+
+  /* Alturas del bloque de imagen y mapa */
+  .media.tall,
+  .media.wide { height: 220px; }
+
+  /* Sedes: 2 → 1 columna */
+  .grid-3 { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,131 @@
+body {
+    text-align: center;
+}
+
+.contenedor-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin: 30px auto;
+    padding: 0 1rem;
+
+}
+
+/* Tarjeta */
+.tarjeta {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+
+
+}
+
+.tarjeta img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.tarjeta h1 {
+    margin: 10px 0 5px;
+    font-size: 1.25rem;
+}
+
+.tarjeta h2 {
+    font-size: 1rem;
+    color: #333;
+    margin: 5px 0 15px;
+}
+
+
+.informacion {
+    text-align: justify;
+    margin: 15px 0;
+
+}
+
+.informacion p {
+    margin: 8px 0;
+}
+
+.informacion i {
+    margin-right: 8px;
+    color: #000;
+}
+
+.Habilidades {
+    text-align: left;
+    margin: 15px 0;
+}
+
+.Habilidades ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Habilidades li {
+    margin: 5px 0;
+}
+
+
+.social {
+    margin: 15px 0;
+}
+
+.social a {
+    margin: 0 8px;
+    text-decoration: none;
+  
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.social .linked,
+.LinkedIn {
+    color: rgb(35, 173, 173);
+}
+
+.GitHub {
+    color: #000;
+}
+
+.Acerca-de-mi {
+    margin-top: 15px;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/*media queries*/
+
+
+@media (max-width: 992px) {
+    .contenedor-tarjetas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section.container.two-col {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .section.container.two-col>.media {
+        order: 2;
+    }
+
+    .section.container.two-col> :not(.media) {
+        order: 1;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .contenedor-tarjetas {
+        grid-template-columns: 1fr;
+    }
+}
