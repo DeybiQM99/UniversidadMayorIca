@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitectura | Universidad Mayor de Ica</title>
+
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="icon" type="image/png" href="../img/logo.png">
+    <link rel="stylesheet" href="../ICON/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css">
+    <!-- ================= CSS CARRUSEL + REQUISITOS ================= -->
+    <link rel="stylesheet" href="css/carrusel.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="../index.html" class="brand">
+                <img src="../img/logohorizontal.png" class="logo-img">
+            </a>
+
+            <div class="header-right">
+
+                <button id="btnMenu" class="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <nav id="mainMenu" class="site-nav">
+                    <a href="../index.html">Inicio</a>
+                    <a href="../carreras.html" class="active">Carreras</a>
+                    <a href="../nosotros.html">Nosotros</a>
+                    <a href="../contacto.html">Contacto</a>
+                </nav>
+
+                <div class="user-actions">
+                    <button id="btnLogout" class="btn btn-logout">
+                        <i class="fa-solid fa-right-from-bracket"></i> Cerrar sesión
+                    </button>
+
+                    <span class="user-badge"><i class="fa-solid fa-circle-user"></i></span>
+
+                    <button id="btnDarkMode" class="dark-toggle">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- BANNER -->
+    <section class="banner">
+        <img src="img/carrera-arquitectura.jpg" class="banner-img">
+    </section>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <section class="section container">
+
+        <h2 class="section-title center">Arquitectura</h2>
+        <p class="center">
+            Carrera dedicada al diseño arquitectónico, urbanismo, planificación territorial y construcción de espacios
+            funcionales, estéticos y sostenibles.
+        </p>
+
+        <br>
+
+        <!-- INFO GENERAL -->
+        <div class="two-col">
+            <div>
+                <h3>Información general</h3>
+                <ul class="lista-carrera">
+                    <li><strong>Duración:</strong> 5 años</li>
+                    <li><strong>Grado:</strong> Bachiller en Arquitectura</li>
+                    <li><strong>Título:</strong> Arquitecto</li>
+                    <li><strong>Modalidad:</strong> Presencial</li>
+                    <li><strong>Turnos:</strong> Mañana / Tarde</li>
+                </ul>
+
+                <button class="btn btn-solid" id="btnInscribirme">
+                    <i class="fa-solid fa-user-pen"></i> Inscribirme
+                </button>
+            </div>
+
+            <div class="media tall">
+                <img src="img/arquitectura-estudiantes.jpg" class="imgcarrera">
+            </div>
+        </div>
+
+        <!-- PERFIL -->
+        <section class="section">
+            <h3 class="section-title">Perfil del Egresado</h3>
+            <p>
+                Profesional capaz de diseñar y proyectar edificaciones, gestionar proyectos urbanos, modelar espacios,
+                aplicar normativas técnicas y promover construcciones sostenibles.
+            </p>
+        </section>
+
+        <!-- MALLA -->
+        <section class="section">
+            <h3 class="section-title">Malla Curricular</h3>
+
+            <div class="ciclos-wrapper">
+
+                <button class="carrusel-btn carrusel-left"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="carrusel-btn carrusel-right"><i class="fa-solid fa-chevron-right"></i></button>
+
+                <div class="ciclos-carousel">
+
+                    <!-- 01 -->
+                    <div class="ciclo-box">
+                        <div class="ciclo-header">
+                            <span class="ciclo-num">01</span> <span class="ciclo-text">ciclo</span>
+                        </div>
+                        <ul class="ciclo-curso-list">
+                            <li>Dibujo Arquitectónico I</li>
+                            <li>Introducción a la Arquitectura</li>
+                            <li>Geometría Descriptiva</li>
+                            <li>Matemática Básica</li>
+                            <li>Historia del Arte I</li>
+                        </ul>
+                    </div>
+
+                    <!-- 02 -->
+                    <div class="ciclo-box">
+                        <div class="ciclo-header"><span class="ciclo-num">02</span><span class="ciclo-text">ciclo</span>
+                        </div>
+                        <ul class="ciclo-curso-list">
+                            <li>Dibujo Arquitectónico II</li>
+                            <li>Teoría del Diseño</li>
+                            <li>Física Aplicada</li>
+                            <li>Historia del Arte II</li>
+                            <li>Comunicación Visual</li>
+                        </ul>
+                    </div>
+
+                    <!-- 03 -->
+                    <div class="ciclo-box">
+                        <div class="ciclo-header"><span class="ciclo-num">03</span><span class="ciclo-text">ciclo</span>
+                        </div>
+                        <ul class="ciclo-curso-list">
+                            <li>Taller de Diseño I</li>
+                            <li>Materiales de Construcción</li>
+                            <li>Topografía</li>
+                            <li>Sociología Urbana</li>
+                            <li>Sistemas Constructivos I</li>
+                        </ul>
+                    </div>
+
+                    <!-- 04 -->
+                    <div class="ciclo-box">
+                        <div class="ciclo-header"><span class="ciclo-num">04</span><span class="ciclo-text">ciclo</span>
+                        </div>
+                        <ul class="ciclo-curso-list">
+                            <li>Taller de Diseño II</li>
+                            <li>Sistemas Constructivos II</li>
+                            <li>Instalaciones Sanitarias</li>
+                            <li>Instalaciones Eléctricas</li>
+                            <li>Modelado 3D</li>
+                        </ul>
+                    </div>
+
+                    <!-- 05 -->
+                    <div class="ciclo-box">
+                        <div class="ciclo-header"><span class="ciclo-num">05</span><span class="ciclo-text">ciclo</span>
+                        </div>
+                        <ul class="ciclo-curso-list">
+                            <li>Taller de Diseño III</li>
+                            <li>Urbanismo I</li>
+                            <li>Estructuras I</li>
+                            <li>Construcción I</li>
+                            <li>Modelado BIM</li>
+                        </ul>
+                    </div>
+
+                    <!-- 06 -->
+                    <div class="ciclo-box">
+                        <div class="ciclo-header"><span class="ciclo-num">06</span><span class="ciclo-text">ciclo</span>
+                        </div>
+                        <ul class="ciclo-curso-list">
+                            <li>Taller de Diseño IV</li>
+                            <li>Urbanismo II</li>
+                            <li>Estructuras II</li>
+                            <li>Construcción II</li>
+                            <li>Electivo I</li>
+                        </ul>
+                    </div>
+
+                    <!-- 07 -->
+                    <div class="ciclo-box">
+                        <div class="ciclo-header"><span class="ciclo-num">07</span><span class="ciclo-text">ciclo</span>
+                        </div>
+                        <ul class="ciclo-curso-list">
+                            <li>Taller de Diseño V</li>
+                            <li>Planeamiento Urbano</li>
+                            <li>Estructuras III</li>
+                            <li>Construcción III</li>
+                            <li>Electivo II</li>
+                        </ul>
+                    </div>
+
+                    <!-- 08 -->
+                    <div class="ciclo-box">
+                        <div class="ciclo-header"><span class="ciclo-num">08</span><span class="ciclo-text">ciclo</span>
+                        </div>
+                        <ul class="ciclo-curso-list">
+                            <li>Taller de Diseño VI</li>
+                            <li>Gestión de Proyectos</li>
+                            <li>Sostenibilidad Ambiental</li>
+                            <li>Práctica Preprofesional I</li>
+                            <li>Electivo III</li>
+                        </ul>
+                    </div>
+
+                    <!-- 09 -->
+                    <div class="ciclo-box">
+                        <div class="ciclo-header"><span class="ciclo-num">09</span><span class="ciclo-text">ciclo</span>
+                        </div>
+                        <ul class="ciclo-curso-list">
+                            <li>Tesis I</li>
+                            <li>Legislación Urbanística</li>
+                            <li>Gestión de Obras</li>
+                            <li>Práctica Preprofesional II</li>
+                        </ul>
+                    </div>
+
+                    <!-- 10 -->
+                    <div class="ciclo-box">
+                        <div class="ciclo-header"><span class="ciclo-num">10</span><span class="ciclo-text">ciclo</span>
+                        </div>
+                        <ul class="ciclo-curso-list">
+                            <li>Tesis II</li>
+                            <li>Ética Profesional</li>
+                            <li>Práctica Preprofesional III</li>
+                            <li>Electivo Final</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- REQUISITOS -->
+        <section class="section">
+            <h3 class="section-title">Requisitos de Inscripción</h3>
+
+            <div class="requisitos-box">
+                <h4><i class="fa-solid fa-file-circle-check"></i> Documentación Necesaria</h4>
+                <ul>
+                    <li><i class="fa-solid fa-id-card"></i> Copia de DNI</li>
+                    <li><i class="fa-solid fa-file-lines"></i> Certificado de estudios secundarios</li>
+                    <li><i class="fa-solid fa-image"></i> Foto tamaño carnet</li>
+                    <li><i class="fa-solid fa-money-bill"></i> Pago de inscripción</li>
+                </ul>
+            </div>
+        </section>
+
+    </section>
+
+    <!-- BOTÓN ARRIBA -->
+    <button id="btn-ir-arriba">
+        <span class="material-symbols-rounded">arrow_upward</span>
+    </button>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+                <img class="logo-img" src="../img/logohorizontal.png">
+            </div>
+
+            <nav>
+                <h3>Legal</h3>
+                <ul>
+                    <li><a>Política de Privacidad</a></li>
+                    <li><a>Términos y Condiciones</a></li>
+                    <li><a>Libro de Reclamaciones</a></li>
+                </ul>
+            </nav>
+
+            <nav>
+                <h3>Contáctanos</h3>
+                <ul>
+                    <li><a href="mailto:admisiones@umi.edu.pe">admisiones@umi.edu.pe</a></li>
+                    <li><a href="tel:+5100000000">+51 000 000 000</a></li>
+                    <li><a>Av. Principal 123, Ica</a></li>
+                </ul>
+            </nav>
+
+            <div class="social">
+                <h3>Síguenos</h3>
+                <div class="icons">
+                    <a><i class="fa-brands fa-facebook-f"></i></a>
+                    <a><i class="fa-brands fa-instagram"></i></a>
+                    <a><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <p class="copy">© 2025 Universidad Mayor de Ica. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- SCRIPTS BASE -->
+    <script src="../JS/BotonArriba.js"></script>
+    <script src="../JS/logoutModal.js"></script>
+    <script src="../JS/dark.js"></script>
+    <script src="../JS/menu.js"></script>
+    <script src="JS/carrucel.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicina Humana | Universidad Mayor de Ica</title>
+
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="icon" type="image/png" href="../img/logo.png">
+    <link rel="stylesheet" href="../ICON/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css">
+
+    <!-- CSS general del carrusel -->
+    <link rel="stylesheet" href="css/carrusel.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="../index.html" class="brand">
+                <img src="../img/logohorizontal.png" class="logo-img">
+            </a>
+
+            <div class="header-right">
+
+                <button id="btnMenu" class="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <nav id="mainMenu" class="site-nav">
+                    <a href="../index.html">Inicio</a>
+                    <a href="../carreras.html" class="active">Carreras</a>
+                    <a href="../nosotros.html">Nosotros</a>
+                    <a href="../contacto.html">Contacto</a>
+                </nav>
+
+                <div class="user-actions">
+                    <button id="btnLogout" class="btn btn-logout">
+                        <i class="fa-solid fa-right-from-bracket"></i> Cerrar sesión
+                    </button>
+
+                    <span class="user-badge"><i class="fa-solid fa-circle-user"></i></span>
+
+                    <button id="btnDarkMode" class="dark-toggle">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- BANNER -->
+    <section class="banner">
+        <img src="img/carrera-medicina.jpg" class="banner-img">
+    </section>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <section class="section container">
+
+        <h2 class="section-title center">Medicina Humana</h2>
+        <p class="center">
+            Carrera dedicada a la formación de médicos capaces de diagnosticar, tratar y prevenir enfermedades, 
+            con sólidos conocimientos científicos, éticos y humanos.
+        </p>
+
+        <br>
+
+        <!-- INFO GENERAL -->
+        <div class="two-col">
+            <div>
+                <h3>Información general</h3>
+                <ul class="lista-carrera">
+                    <li><strong>Duración:</strong> 7 años</li>
+                    <li><strong>Grado:</strong> Bachiller en Medicina</li>
+                    <li><strong>Título:</strong> Médico Cirujano</li>
+                    <li><strong>Modalidad:</strong> Presencial</li>
+                    <li><strong>Turnos:</strong> Mañana / Tarde</li>
+                </ul>
+
+                <button class="btn btn-solid" id="btnInscribirme">
+                    <i class="fa-solid fa-user-pen"></i> Inscribirme
+                </button>
+            </div>
+
+            <div class="media tall">
+                <img src="img/medicina-estudiantes.jpg" class="imgcarrera">
+            </div>
+        </div>
+
+        <!-- PERFIL -->
+        <section class="section">
+            <h3 class="section-title">Perfil del Egresado</h3>
+            <p>
+                El médico cirujano estará preparado para diagnosticar y tratar enfermedades, realizar procedimientos clínicos,
+                aplicar criterios científicos, trabajar en emergencias, investigar, atender con ética y servir en hospitales,
+                clínicas, centros de salud y campañas comunitarias.
+            </p>
+        </section>
+
+        <!-- MALLA -->
+        <section class="section">
+            <h3 class="section-title">Malla Curricular</h3>
+
+            <div class="ciclos-wrapper">
+
+                <button class="carrusel-btn carrusel-left"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="carrusel-btn carrusel-right"><i class="fa-solid fa-chevron-right"></i></button>
+
+                <div class="ciclos-carousel">
+
+                    <!-- 01 -->
+                    <div class="ciclo-box">
+                        <div class="ciclo-header">
+                            <span class="ciclo-num">01</span><span class="ciclo-text">ciclo</span>
+                        </div>
+                        <ul class="ciclo-curso-list">
+                            <li>Biología Celular</li>
+                            <li>Anatomía Humana I</li>
+                            <li>Química General</li>
+                            <li>Fundamentos de Salud</li>
+                            <li>Comunicación Científica</li>
+                        </ul>
+                    </div>
+
+                    <!-- 02 -->
+                    <div class="ciclo-box">
+                        <div class="ciclo-header">
+                            <span class="ciclo-num">02</span><span class="ciclo-text">ciclo</span>
+                        </div>
+                        <ul class="ciclo-curso-list">
+                            <li>Anatomía Humana II</li>
+                            <li>Bioquímica</li>
+                            <li>Histología</li>
+                            <li>Psicología Médica</li>
+                            <li>Realidad Nacional</li>
+                        </ul>
+                    </div>
+
+                    <!-- 03 -->
+                    <div class="ciclo-box">
+                        <div class="ciclo-header">
+                            <span class="ciclo-num">03</span><span class="ciclo-text">ciclo</span>
+                        </div>
+                        <ul class="ciclo-curso-list">
+                            <li>Fisiología Humana I</li>
+                            <li>Genética Médica</li>
+                            <li>Microbiología General</li>
+                            <li>Metodología de Investigación I</li>
+                            <li>Inmunología Básica</li>
+                        </ul>
+                    </div>
+
+                    <!-- 04 -->
+                    <div class="ciclo-box">
+                        <div class="ciclo-header">
+                            <span class="ciclo-num">04</span><span class="ciclo-text">ciclo</span>
+                        </div>
+                        <ul class="ciclo-curso-list">
+                            <li>Fisiología Humana II</li>
+                            <li>Microbiología Clínica</li>
+                            <li>Bioestadística</li>
+                            <li>Patología General</li>
+                            <li>Farmacología I</li>
+                        </ul>
+                    </div>
+
+                    <!-- 05 -->
+                    <div class="ciclo-box">
+                        <div class="ciclo-header">
+                            <span class="ciclo-num">05</span><span class="ciclo-text">ciclo</span>
+                        </div>
+                        <ul class="ciclo-curso-list">
+                            <li>Farmacología II</li>
+                            <li>Patología Clínica</li>
+                            <li>Propedéutica Médica I</li>
+                            <li>Epidemiología</li>
+                            <li>Imagenología</li>
+                        </ul>
+                    </div>
+
+                    <!-- 06 -->
+                    <div class="ciclo-box">
+                        <div class="ciclo-header">
+                            <span class="ciclo-num">06</span><span class="ciclo-text">ciclo</span>
+                        </div>
+                        <ul class="ciclo-curso-list">
+                            <li>Propedéutica Médica II</li>
+                            <li>Medicina Interna I</li>
+                            <li>Pediatría I</li>
+                            <li>Ginecología y Obstetricia I</li>
+                            <li>Investigación Médica I</li>
+                        </ul>
+                    </div>
+
+                    <!-- 07 -->
+                    <div class="ciclo-box">
+                        <div class="ciclo-header">
+                            <span class="ciclo-num">07</span><span class="ciclo-text">ciclo</span>
+                        </div>
+                        <ul class="ciclo-curso-list">
+                            <li>Medicina Interna II</li>
+                            <li>Pediatría II</li>
+                            <li>Ginecología y Obstetricia II</li>
+                            <li>Cirugía I</li>
+                            <li>Investigación Médica II</li>
+                        </ul>
+                    </div>
+
+                    <!-- 08 -->
+                    <div class="ciclo-box">
+                        <div class="ciclo-header">
+                            <span class="ciclo-num">08</span><span class="ciclo-text">ciclo</span>
+                        </div>
+                        <ul class="ciclo-curso-list">
+                            <li>Cirugía II</li>
+                            <li>Emergencias Médicas</li>
+                            <li>Salud Pública y Comunitaria</li>
+                            <li>Psiquiatría</li>
+                            <li>Electivo Clínico I</li>
+                        </ul>
+                    </div>
+
+                    <!-- 09 -->
+                    <div class="ciclo-box">
+                        <div class="ciclo-header">
+                            <span class="ciclo-num">09</span><span class="ciclo-text">ciclo</span>
+                        </div>
+                        <ul class="ciclo-curso-list">
+                            <li>Tesis I</li>
+                            <li>Internado Médico I</li>
+                            <li>Rotación Hospitalaria I</li>
+                            <li>Electivo Clínico II</li>
+                        </ul>
+                    </div>
+
+                    <!-- 10 -->
+                    <div class="ciclo-box">
+                        <div class="ciclo-header">
+                            <span class="ciclo-num">10</span><span class="ciclo-text">ciclo</span>
+                        </div>
+                        <ul class="ciclo-curso-list">
+                            <li>Tesis II</li>
+                            <li>Internado Médico II</li>
+                            <li>Rotación Hospitalaria II</li>
+                            <li>Ética Profesional Médica</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- REQUISITOS -->
+        <section class="section">
+            <h3 class="section-title">Requisitos de Inscripción</h3>
+
+            <div class="requisitos-box">
+                <h4><i class="fa-solid fa-file-circle-check"></i> Documentación Necesaria</h4>
+                <ul>
+                    <li><i class="fa-solid fa-id-card"></i> Copia de DNI</li>
+                    <li><i class="fa-solid fa-file-lines"></i> Certificado de estudios secundarios</li>
+                    <li><i class="fa-solid fa-image"></i> Foto tamaño carnet</li>
+                    <li><i class="fa-solid fa-money-bill"></i> Pago de inscripción</li>
+                </ul>
+            </div>
+        </section>
+
+    </section>
+
+    <!-- BOTÓN ARRIBA -->
+    <button id="btn-ir-arriba">
+        <span class="material-symbols-rounded">arrow_upward</span>
+    </button>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+                <img class="logo-img" src="../img/logohorizontal.png">
+            </div>
+
+            <nav>
+                <h3>Legal</h3>
+                <ul>
+                    <li><a>Política de Privacidad</a></li>
+                    <li><a>Términos y Condiciones</a></li>
+                    <li><a>Libro de Reclamaciones</a></li>
+                </ul>
+            </nav>
+
+            <nav>
+                <h3>Contáctanos</h3>
+                <ul>
+                    <li><a href="mailto:admisiones@umi.edu.pe">admisiones@umi.edu.pe</a></li>
+                    <li><a href="tel:+5100000000">+51 000 000 000</a></li>
+                    <li><a>Av. Principal 123, Ica</a></li>
+                </ul>
+            </nav>
+
+            <div class="social">
+                <h3>Síguenos</h3>
+                <div class="icons">
+                    <a><i class="fa-brands fa-facebook-f"></i></a>
+                    <a><i class="fa-brands fa-instagram"></i></a>
+                    <a><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <p class="copy">© 2025 Universidad Mayor de Ica. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- SCRIPTS BASE -->
+    <script src="../JS/BotonArriba.js"></script>
+    <script src="../JS/logoutModal.js"></script>
+    <script src="../JS/dark.js"></script>
+    <script src="../JS/menu.js"></script>
+
+    <!-- Script carrusel -->
+    <script src="JS/carrucel.js"></script>
+
+    <script>
+        document.getElementById("btnInscribirme").onclick = () => {
+            window.location.href = "../inscripcion.html?carrera=Medicina%20Humana";
+        };
+    </script>
+
+</body>
+</html>

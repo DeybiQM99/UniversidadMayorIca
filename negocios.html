@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración y Negocios Internacionales | Universidad Mayor de Ica</title>
+
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="icon" type="image/png" href="../img/logo.png">
+    <link rel="stylesheet" href="../ICON/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+       <!-- ================= CSS CARRUSEL + REQUISITOS ================= -->  
+          <link rel="stylesheet" href="css/carrusel.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="../index.html">
+                <img src="../img/logohorizontal.png" alt="Logo Universidad Mayor de Ica" class="logo-img">
+            </a>
+
+            <div class="header-right">
+                <button id="btnMenu" class="menu-toggle" aria-label="Abrir menú">
+                    <i id="iconMenu" class="fa-solid fa-bars"></i>
+                </button>
+
+                <nav id="mainMenu" class="site-nav">
+                    <a href="../index.html">Inicio</a>
+                    <a href="../carreras.html" class="active">Carreras</a>
+                    <a href="../nosotros.html">Nosotros</a>
+                    <a href="../contacto.html">Contacto</a>
+                </nav>
+
+                <div class="user-actions">
+                    <button id="btnLogout" class="btn btn-logout" type="button">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Cerrar sesión
+                    </button>
+                    <span class="user-badge">
+                        <i class="fa-solid fa-circle-user"></i>
+                    </span>
+                    <button id="btnDarkMode" class="dark-toggle" aria-label="Cambiar tema">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <img src="img/carrera-negocios.jpg" alt="Administración y Negocios Internacionales" class="banner-img">
+    </section>
+
+    <section class="section container">
+        <h2 class="section-title center">Administración y Negocios Internacionales</h2>
+        <p class="center">
+            Carrera orientada a la gestión estratégica de empresas, comercio exterior y negociación internacional,
+            formando profesionales capaces de liderar organizaciones en mercados globales.
+        </p>
+
+        <br>
+
+        <div class="two-col">
+            <div>
+                <h3>Información general</h3>
+                <ul class="lista-carrera">
+                    <li><strong>Duración:</strong> 5 años</li>
+                    <li><strong>Grado:</strong> Bachiller en Administración y Negocios Internacionales</li>
+                    <li><strong>Título:</strong> Licenciado en Administración y Negocios Internacionales</li>
+                    <li><strong>Modalidad:</strong> Presencial</li>
+                    <li><strong>Turnos:</strong> Mañana / Noche</li>
+                </ul>
+                <button class="btn btn-solid" id="btnInscribirme">
+                    <i class="fa-solid fa-user-pen"></i> Inscribirme
+                </button>
+            </div>
+
+            <div class="media tall">
+                <img class="imgcarrera" src="img/negocios-estudiantes.jpg" alt="Administración y Negocios">
+            </div>
+        </div>
+
+        <section class="section">
+            <h3 class="section-title">Perfil del Egresado</h3>
+            <p>
+                El egresado será capaz de planificar, organizar y dirigir negocios nacionales e internacionales;
+                diseñar estrategias comerciales, gestionar operaciones de comercio exterior y liderar equipos en
+                entornos altamente competitivos y globalizados.
+            </p>
+        </section>
+
+        <section class="section">
+            <h3 class="section-title">Malla Curricular</h3>
+
+            <div class="ciclos-wrapper">
+                <button class="carrusel-btn carrusel-left"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="carrusel-btn carrusel-right"><i class="fa-solid fa-chevron-right"></i></button>
+
+                <div class="ciclos-carousel">
+                    <!-- 01 -->
+                    <div class="ciclo-box">
+                        <div class="ciclo-header">
+                            <span class="ciclo-num">01</span><span class="ciclo-text">ciclo</span>
+                        </div>
+                        <ul class="ciclo-curso-list">
+                            <li>INTRODUCCIÓN A LA VIDA UNIVERSITARIA</li>
+                            <li>FUNDAMENTOS DE ADMINISTRACIÓN</li>
+                            <li>MATEMÁTICA BÁSICA</li>
+                            <li>COMUNICACIÓN ORAL Y ESCRITA</li>
+                            <li>REALIDAD NACIONAL Y MUNDIAL</li>
+                            <li>HERRAMIENTAS DIGITALES PARA NEGOCIOS</li>
+                        </ul>
+                    </div>
+                    <!-- 02 -->
+                    <div class="ciclo-box">
+                        <div class="ciclo-header">
+                            <span class="ciclo-num">02</span><span class="ciclo-text">ciclo</span>
+                        </div>
+                        <ul class="ciclo-curso-list">
+                            <li>CONTABILIDAD GENERAL</li>
+                            <li>MATEMÁTICA APLICADA A LOS NEGOCIOS</li>
+                            <li>ECONOMÍA GENERAL</li>
+                            <li>INTRODUCCIÓN AL MARKETING</li>
+                            <li>COMPORTAMIENTO ORGANIZACIONAL</li>
+                            <li>INGLÉS PARA NEGOCIOS I</li>
+                        </ul>
+                    </div>
+                    <!-- 03 -->
+                    <div class="ciclo-box">
+                        <div class="ciclo-header">
+                            <span class="ciclo-num">03</span><span class="ciclo-text">ciclo</span>
+                        </div>
+                        <ul class="ciclo-curso-list">
+                            <li>ESTADÍSTICA PARA LA GESTIÓN</li>
+                            <li>CONTABILIDAD DE COSTOS</li>
+                            <li>MARKETING ESTRATÉGICO</li>
+                            <li>COMERCIO EXTERIOR I</li>
+                            <li>GESTIÓN DEL TALENTO HUMANO</li>
+                            <li>INGLÉS PARA NEGOCIOS II</li>
+                        </ul>
+                    </div>
+                    <!-- 04 -->
+                    <div class="ciclo-box">
+                        <div class="ciclo-header">
+                            <span class="ciclo-num">04</span><span class="ciclo-text">ciclo</span>
+                        </div>
+                        <ul class="ciclo-curso-list">
+                            <li>FINANZAS I</li>
+                            <li>LOGÍSTICA Y CADENA DE SUMINISTRO</li>
+                            <li>COMERCIO EXTERIOR II</li>
+                            <li>GESTIÓN DE OPERACIONES</li>
+                            <li>DERECHO EMPRESARIAL</li>
+                            <li>NEGOCIACIÓN Y TÉCNICAS DE VENTA</li>
+                        </ul>
+                    </div>
+                    <!-- 05 -->
+                    <div class="ciclo-box">
+                        <div class="ciclo-header">
+                            <span class="ciclo-num">05</span><span class="ciclo-text">ciclo</span>
+                        </div>
+                        <ul class="ciclo-curso-list">
+                            <li>FINANZAS INTERNACIONALES</li>
+                            <li>GESTIÓN ESTRATÉGICA</li>
+                            <li>INVESTIGACIÓN DE MERCADOS</li>
+                            <li>GESTIÓN DE MARCAS</li>
+                            <li>RÉGIMEN ADUANERO Y TRIBUTARIO</li>
+                            <li>INGLÉS PARA NEGOCIOS III</li>
+                        </ul>
+                    </div>
+                    <!-- 06 -->
+                    <div class="ciclo-box">
+                        <div class="ciclo-header">
+                            <span class="ciclo-num">06</span><span class="ciclo-text">ciclo</span>
+                        </div>
+                        <ul class="ciclo-curso-list">
+                            <li>PLANEAMIENTO COMERCIAL INTERNACIONAL</li>
+                            <li>GESTIÓN DE PROYECTOS</li>
+                            <li>NEGOCIOS DIGITALES</li>
+                            <li>HERRAMIENTAS FINANCIERAS</li>
+                            <li>ÉTICA Y RESPONSABILIDAD SOCIAL</li>
+                            <li>ELECTIVO I</li>
+                        </ul>
+                    </div>
+                    <!-- 07 -->
+                    <div class="ciclo-box">
+                        <div class="ciclo-header">
+                            <span class="ciclo-num">07</span><span class="ciclo-text">ciclo</span>
+                        </div>
+                        <ul class="ciclo-curso-list">
+                            <li>GESTIÓN DE NEGOCIOS INTERNACIONALES</li>
+                            <li>FORMULACIÓN Y EVALUACIÓN DE PROYECTOS</li>
+                            <li>ALIANZAS ESTRATÉGICAS Y JOINT VENTURE</li>
+                            <li>GESTIÓN DE RIESGOS EN COMERCIO EXTERIOR</li>
+                            <li>LIDERAZGO GERENCIAL</li>
+                            <li>ELECTIVO II</li>
+                        </ul>
+                    </div>
+                    <!-- 08 -->
+                    <div class="ciclo-box">
+                        <div class="ciclo-header">
+                            <span class="ciclo-num">08</span><span class="ciclo-text">ciclo</span>
+                        </div>
+                        <ul class="ciclo-curso-list">
+                            <li>EMPRENDIMIENTO Y CREACIÓN DE EMPRESAS</li>
+                            <li>GESTIÓN DE INNOVACIÓN</li>
+                            <li>ACUERDOS COMERCIALES INTERNACIONALES</li>
+                            <li>GESTIÓN DE CALIDAD</li>
+                            <li>GERENCIA DE VENTAS</li>
+                            <li>ELECTIVO III</li>
+                        </ul>
+                    </div>
+                    <!-- 09 -->
+                    <div class="ciclo-box">
+                        <div class="ciclo-header">
+                            <span class="ciclo-num">09</span><span class="ciclo-text">ciclo</span>
+                        </div>
+                        <ul class="ciclo-curso-list">
+                            <li>SEMINARIO DE TESIS I</li>
+                            <li>GESTIÓN DE NEGOCIOS SOSTENIBLES</li>
+                            <li>MARKETING INTERNACIONAL</li>
+                            <li>GESTIÓN DE LA EXPERIENCIA DEL CLIENTE</li>
+                            <li>GERENCIA ESTRATÉGICA INTERNACIONAL</li>
+                        </ul>
+                    </div>
+                    <!-- 10 -->
+                    <div class="ciclo-box">
+                        <div class="ciclo-header">
+                            <span class="ciclo-num">10</span><span class="ciclo-text">ciclo</span>
+                        </div>
+                        <ul class="ciclo-curso-list">
+                            <li>SEMINARIO DE TESIS II</li>
+                            <li>GERENCIA GENERAL</li>
+                            <li>GESTIÓN DEL CAMBIO ORGANIZACIONAL</li>
+                            <li>PRÁCTICAS PREPROFESIONALES</li>
+                            <li>ÉTICA PROFESIONAL Y DEONTOLOGÍA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h3 class="section-title">Requisitos de Inscripción</h3>
+            <div class="requisitos-box">
+                <h4><i class="fa-solid fa-file-circle-check"></i> Documentación necesaria</h4>
+                <ul>
+                    <li><i class="fa-solid fa-id-card"></i> Copia de DNI</li>
+                    <li><i class="fa-solid fa-file-lines"></i> Certificado de estudios secundarios</li>
+                    <li><i class="fa-solid fa-image"></i> Foto tamaño carnet</li>
+                    <li><i class="fa-solid fa-money-bill"></i> Pago de derecho de inscripción</li>
+                </ul>
+            </div>
+        </section>
+    </section>
+
+    <button id="btn-ir-arriba" aria-label="Volver al inicio">
+        <span class="material-symbols-rounded">arrow_upward</span>
+    </button>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img class="logo-img" src="../img/logohorizontal.png" alt="">
+            </div>
+            <nav>
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Libro de Reclamaciones</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <h3>Contáctanos</h3>
+                <ul>
+                    <li><a href="mailto:admisiones@umi.edu.pe">admisiones@umi.edu.pe</a></li>
+                    <li><a href="tel:+5100000000">+51 000 000 000</a></li>
+                    <li><a href="#">Av. Principal 123, Ica</a></li>
+                </ul>
+            </nav>
+            <div class="social">
+                <h3>Síguenos</h3>
+                <div class="icons">
+                    <a target="_blank" href="https://www.facebook.com/">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="copy">© 2025 Universidad Mayor de Ica. Todos los derechos reservados.</p>
+    </footer>
+
+    <div id="overlayLogout" class="overlay" aria-hidden="true">
+        <div class="modal" role="dialog">
+            <h3>¿Cerrar sesión?</h3>
+            <p>Se cerrará tu sesión actual.</p>
+            <div class="modal-actions">
+                <button id="confirmLogout" class="btn btn-solid danger">Sí, cerrar</button>
+                <button id="cancelLogout" class="btn btn-outline">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS/BotonArriba.js"></script>
+    <script src="../JS/logoutModal.js"></script>
+    <script src="../JS/dark.js"></script>
+    <script src="../JS/menu.js"></script>
+
+      <script src="JS/carrucel.js"></script>
+</body>
+
+</html>
