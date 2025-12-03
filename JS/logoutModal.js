@@ -7,19 +7,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (!btnLogout || !overlay) return;
 
-  // Abrir modal (agrega clase .show)
+  // Abrir modal
   btnLogout.addEventListener('click', () => {
     overlay.classList.add('show');
     overlay.setAttribute('aria-hidden', 'false');
   });
 
-  // Cerrar por cancelar
+  // Cancelar modal
   btnCancel?.addEventListener('click', () => {
     overlay.classList.remove('show');
     overlay.setAttribute('aria-hidden', 'true');
   });
 
-  // Cerrar al clickear fuera de la caja (overlay)
+  // Cerrar clickeando fuera del modal
   overlay.addEventListener('click', (e) => {
     if (e.target === overlay) {
       overlay.classList.remove('show');
@@ -27,10 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Confirmar cierre de sesión (ajusta a tu flujo real)
+  // CONFIRMAR LOGOUT
   btnConfirm?.addEventListener('click', () => {
-    // TODO: aquí va tu lógica real de logout (sessionStorage, fetch, etc.)
-    // De ejemplo, redirigimos a login:
+
+    // ❗ BORRAR LA SESIÓN REAL
+    localStorage.removeItem("sesionUMI");
+
+    // Redirigir al login
     window.location.href = 'login.html';
   });
 });

@@ -2,63 +2,48 @@ const loginForm = document.getElementById("loginForm");
 const mensaje = document.getElementById("mensaje");
 
 loginForm.addEventListener("submit", function (event) {
-  event.preventDefault(); // Evita recargar la página
+  event.preventDefault();
 
   const usuario = document.getElementById("usuario").value.trim().toLowerCase();
   const clave = document.getElementById("clave").value.trim();
 
-  // Reset del mensaje
   mensaje.textContent = "";
   mensaje.className = "msg";
 
   let accesoConcedido = false;
+  let rol = "";
 
-  // Usamos switch para validar según el usuario
   switch (usuario) {
     case "admin":
-      if (clave === "1234") {
-        mensaje.textContent = "Bienvenido, administrador.";
-        mensaje.classList.add("ok");
-        accesoConcedido = true;
-      } else {
-        mensaje.textContent = "Contraseña o usuario incorrecta.";
-        mensaje.classList.add("error");
-      }
+      if (clave === "1234") { accesoConcedido = true; rol = "admin"; }
       break;
 
     case "alumno":
-      if (clave === "1111") {
-        mensaje.textContent = "Bienvenido, alumno.";
-        mensaje.classList.add("ok");
-        accesoConcedido = true;
-      } else {
-        mensaje.textContent = "Contraseña o usuario incorrecta.";
-        mensaje.classList.add("error");
-      }
+      if (clave === "1111") { accesoConcedido = true; rol = "alumno"; }
       break;
 
     case "docente":
-      if (clave === "2222") {
-        mensaje.textContent = "Bienvenido, docente.";
-        mensaje.classList.add("ok");
-        accesoConcedido = true;
-      } else {
-        mensaje.textContent = "Contraseña o usuario incorrecta.";
-        mensaje.classList.add("error");
-      }
-      break;
-
-    default:
-      mensaje.textContent = "Usuario no reconocido.";
-      mensaje.classList.add("error");
+      if (clave === "2222") { accesoConcedido = true; rol = "docente"; }
       break;
   }
 
-  // Si el acceso fue correcto, redirigimos al inicio del proyecto
-  if (accesoConcedido) {
-    // Cambia "index.html" si tu archivo se llama distinto (por ejemplo "Index.html" o "inde.html")
-    setTimeout(() => {
-      window.location.href = "index.html";
-    }, 800); // pequeño delay para que se vea el mensaje
+  if (!accesoConcedido) {
+    mensaje.textContent = "Usuario o contraseña incorrectos.";
+    mensaje.classList.add("error");
+    return;
   }
+
+  // ✔ Guardar sesión
+  localStorage.setItem("sesionUMI", JSON.stringify({
+    usuario: usuario,
+    rol: rol,
+    time: Date.now()
+  }));
+
+  mensaje.textContent = "Acceso correcto.";
+  mensaje.classList.add("ok");
+
+  setTimeout(() => {
+    window.location.href = "index.html";
+  }, 600);
 });
