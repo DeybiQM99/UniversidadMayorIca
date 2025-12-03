@@ -1,0 +1,126 @@
+
+        .ciclos-wrapper {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            padding: 10px 40px;
+            margin-top: 30px;
+        }
+
+        .ciclos-carousel {
+            display: flex;
+            gap: 25px;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            padding-bottom: 15px;
+        }
+
+        .ciclos-carousel::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .ciclos-carousel::-webkit-scrollbar-thumb {
+            background: #b9b9b9;
+            border-radius: 10px;
+        }
+
+        .ciclo-box {
+            min-width: 300px;
+            background: #fff;
+            border-radius: 14px;
+            border: 1px solid #dcdcdc;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, .12);
+            overflow: hidden;
+            transition: .25s ease;
+        }
+
+        .ciclo-box:hover {
+            transform: scale(1.03);
+        }
+
+        .ciclo-header {
+            background: #020617;
+            color: #fff;
+            padding: 18px;
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .ciclo-num {
+            background: #fff;
+            color: #020617;
+            padding: 6px 14px;
+            font-size: 28px;
+            border-radius: 6px;
+        }
+
+        .ciclo-text {
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        .ciclo-curso-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .ciclo-curso-list li {
+            padding: 12px 14px;
+            border-bottom: 1px solid #eee;
+            font-size: 15px;
+        }
+
+        .carrusel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 48px;
+            height: 48px;
+            background: #020617;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, .25);
+            transition: .25s;
+            z-index: 100;
+        }
+
+        .carrusel-btn:hover {
+            transform: translateY(-50%) scale(1.08);
+        }
+
+        .carrusel-left {
+            left: 5px;
+        }
+
+        .carrusel-right {
+            right: 5px;
+        }
+
+        .hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .requisitos-box {
+            margin-top: 40px;
+            background: #fafafa;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 6px solid #020617;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+        }
+
+        .requisitos-box li {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
